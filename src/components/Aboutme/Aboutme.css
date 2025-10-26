@@ -1,0 +1,59 @@
+.title {
+   text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #00ffff;
+  font-weight: bold;
+  border-bottom: 2px solid #00ffff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.mypara{
+      margin-bottom: 16px;
+}
+
+.skills{
+     max-width: 800px;
+  margin: 60px auto; /* center and add spacing */
+  padding: 30px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  color: #f1f1f1;
+  line-height: 1.7;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .skills {
+    margin: 40px auto;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .mypara {
+    margin-bottom: 12px;
+  }
+}
+
+/* === SMALLER PHONES === */
+@media (max-width: 480px) {
+  .skills {
+    margin: 30px auto;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .mypara {
+    margin-bottom: 10px;
+  }
+}

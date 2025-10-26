@@ -1,0 +1,75 @@
+.contactSection {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.line {
+  width: 80px;
+  height: 3px;
+  background-color: white;
+  margin: 0 auto 1.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.contactTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00ffff;
+  font-size: 36px;
+}
+
+.contactDetails p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.contactDetails a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.contactDetails a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 2rem 1rem;
+  }
+
+  .contactTitle {
+    font-size: 28px;
+  }
+
+  .line {
+    width: 60px;
+    height: 2px;
+  }
+
+  .contactDetails p {
+    font-size: 1rem;
+  }
+}
+
+/* === SMALLER PHONES === */
+@media (max-width: 480px) {
+  .contactSection {
+    padding: 1.5rem 1rem;
+  }
+
+  .contactTitle {
+    font-size: 24px;
+  }
+
+  .line {
+    width: 50px;
+    height: 2px;
+  }
+
+  .contactDetails p {
+    font-size: 0.95rem;
+  }
+}

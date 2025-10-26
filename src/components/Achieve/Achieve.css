@@ -1,0 +1,81 @@
+.achievebox {
+  background-color: #1f1f1f; /* dark background */
+  color: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+.achievetitle {
+   text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #00ffff;
+  font-weight: bold;
+  border-bottom: 2px solid #00ffff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.underline {
+  width: 60px;
+  height: 3px;
+  background-color: #00ffff;
+  border: none;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.achievelist {
+  font-size: 1.1rem;
+  color: whitesmoke;
+  margin: 0.6rem 0;
+  list-style-type:circle;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .achievebox {
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+  }
+
+  .achievetitle {
+    font-size: 28px;
+  }
+
+  .underline {
+    width: 50px;
+    height: 2px;
+  }
+
+  .achievelist {
+    font-size: 1rem;
+    margin-left: 8px;
+  }
+}
+
+/* === SMALLER PHONES === */
+@media (max-width: 480px) {
+  .achievebox {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .achievetitle {
+    font-size: 24px;
+  }
+
+  .underline {
+    width: 40px;
+    height: 2px;
+  }
+
+  .achievelist {
+    font-size: 0.95rem;
+    margin-left: 6px;
+  }
+}
