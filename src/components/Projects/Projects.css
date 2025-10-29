@@ -79,4 +79,48 @@
   .title {
     font-size: 24px;
   }
+  
+ .projectItem {
+  margin-bottom: 2rem;
+}
+
+.projectTitle {
+  display: inline-flex;           /* keeps icon next to title */
+  align-items: center;
+  column-gap: 12px;               /* <<< this adds a clear gap */
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.githubIconLink {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 6px;               /* extra spacing tweak */
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.githubIconLink:hover {
+  transform: translateY(-2px);
+}
+
+.externalIcon {
+  stroke: #00ffff; /* bright aqua color */
+  transition: all 0.25s ease-in-out;
+  filter: drop-shadow(0 0 2px rgba(0, 255, 255, 0.5));
+}
+
+.githubIconLink:hover .externalIcon {
+  stroke: #5cc9f5; /* softer aqua on hover */
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.8));
+}
+
+.projectDesc {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  line-height: 1.5;
+}
 }
