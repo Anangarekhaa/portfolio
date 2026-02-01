@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Skills.css';
 import PythonLogo from '../../assets/python_img.jpg';
 import Reactlogo from '../../assets/React-icon.svg.png';
@@ -21,9 +21,12 @@ import visuallogo from '../../assets/visualcode.png';
 import postmanlogo from '../../assets/postman.png';
 import { FaPython, FaReact, FaNodeJs, FaDocker, FaGit } from 'react-icons/fa';
 import { SiJavascript, SiMongodb, SiMysql, SiFirebase, SiTailwindcss } from 'react-icons/si';
+import AOS from 'aos';
 
 const skills = [
   { name: 'Python', icon: <img src={PythonLogo} alt="Python" className="skillImg" /> },
+  { name: 'Django', icon: <span className="skillIconText">🎜</span> },
+  { name: 'FastAPI', icon: <span className="skillIconText">⚡</span> },
   { name: 'MySql', icon: <img src={mysqllogo} alt="mysql" className="skillImg" /> },
   { name: 'Azure', icon: <img src={azurelogo} alt="Azure" className="skillImg" /> },
   { name: 'AWS', icon: <img src={awslogo} alt="AWS" className="skillImg" /> },
@@ -42,17 +45,26 @@ const skills = [
   { name: 'Pandas', icon: <img src={pandaslogo} alt="pandas" className="skillImg" /> },
   { name: 'Visual Studio Code', icon: <img src={visuallogo} alt="visual" className="skillImg" /> },
   { name: 'Postman', icon: <img src={postmanlogo} alt="postman" className="skillImg" /> },
-
 ];
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.refresh();
+  }, []);
+
   return (
-    <section className="skillsSection">
-      <h2 className="skillsTitle">My Tech Stack</h2>
+    <section className="skillsSection" data-aos="fade-up" data-aos-duration="800">
+      <h2 className="skillsTitle" data-aos="fade-down">My Tech Stack</h2>
       
       <div className="skillsWrapper">
         {skills.map((skill, index) => (
-          <div className="skillPill" key={index}>
+          <div 
+            className="skillPill" 
+            key={index}
+            data-aos="zoom-in"
+            data-aos-delay={index * 50}
+            data-aos-duration="600"
+          >
             <span className="skillIcon">{skill.icon}</span>
             <span>{skill.name}</span>
           </div>

@@ -45,6 +45,11 @@
 
 .introname{
     color:aqua;
+    background: linear-gradient(90deg, #00ffff, #00ff88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
 }
 
 .intropara{
@@ -52,9 +57,11 @@
     font-weight: 300;
     letter-spacing: 1px;
     margin-left: 10px;
+    color: #b3b3b3;
 }
 .introtext{
     margin-left: 10px;
+    font-weight: 600;
 }
 
 
@@ -91,6 +98,98 @@
 }
 
 /* keep very small-phone tweaks if needed */
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleInRight {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+  }
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 10px 35px rgba(0, 255, 255, 0.8);
+  }
+}
+
+/* Animation Classes */
+.fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fadeInUp:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.fadeInUp:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.fadeInUp:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.fadeInUp:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+.scaleInRight {
+  animation: scaleInRight 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.rolesContainer {
+  margin-left: 10px;
+  font-size: 2.5rem;
+  color: #00ffff;
+  min-height: 3.5rem;
+}
+
+.dynamicRole {
+  font-weight: 600;
+  background: linear-gradient(90deg, #00ffff, #00ff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  margin-left: 5px;
+  color: #00ffff;
+}
+
+.myimg {
+  animation: glow 3s ease-in-out infinite;
+}
+
 @media (max-width: 480px) {
   .myimg {
     width: 120px;
@@ -101,4 +200,5 @@
   .hello { font-size: 5vw; }
   .introtext { font-size: 6vw; }
   .intropara { font-size: 4vw; }
+  .rolesContainer { font-size: 1.5rem; }
 }

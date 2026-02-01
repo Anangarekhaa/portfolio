@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Projects.css'
+import AOS from 'aos'
 
 const Projects = () => {
-  return (
-     <section className="projectbox">
-      <h1 className="title">Projects</h1>
+  useEffect(() => {
+    AOS.refresh();
+  }, []);
 
-          <div className="projectItem">
+  return (
+     <section name="projects" className="projectbox" data-aos="fade-up" data-aos-duration="800">
+      <h1 className="title" data-aos="fade-down">Projects</h1>
+
+          <div className="projectItem" data-aos="slide-up" data-aos-duration="800">
         <h2 className="projectTitle">
           🚌 Smart Bus Tracking & Fleet Management Platform
           <a
@@ -41,7 +46,7 @@ const Projects = () => {
       </div>
 
 
-      <div className="projectItem">
+      <div className="projectItem" data-aos="slide-up" data-aos-duration="800">
         <h2 className="projectTitle">
           🔒 Secure Online Code Executor
           <a
@@ -77,7 +82,7 @@ const Projects = () => {
 
 
 
-     <div className="projectItem">
+     <div className="projectItem" data-aos="slide-up" data-aos-duration="800">
   <h2 className="projectTitle">
     🏏 IPL RAG Bot
     <a
@@ -114,7 +119,7 @@ const Projects = () => {
 </div>
 
 
-      <div className="projectItem">
+      <div className="projectItem" data-aos="slide-up" data-aos-duration="800">
   <h2 className="projectTitle">
     🎵 Facial Emotion Recognition with Song Recommendation
     <a
