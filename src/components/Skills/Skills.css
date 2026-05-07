@@ -97,6 +97,12 @@
   line-height: 1;
 }
 
+.skillIcon {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
 .skillImg {
   width: 30px;
   height: 30px;
@@ -105,7 +111,16 @@
   filter: drop-shadow(0 0 3px rgba(0, 255, 255, 0.5));
 }
 
-.skillPill:hover .skillImg {
+.skillSvg {
+  width: 24px;
+  height: 24px;
+  color: #00ffff;
+  margin-right: 0.5rem;
+  filter: drop-shadow(0 0 3px rgba(0, 255, 255, 0.5));
+}
+
+.skillPill:hover .skillImg,
+.skillPill:hover .skillSvg {
   filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.8));
 }
 
@@ -122,6 +137,11 @@
   .skillImg {
     width: 25px;
     height: 25px;
+  }
+
+  .skillSvg {
+    width: 20px;
+    height: 20px;
   }
 
   .skillsTitle {

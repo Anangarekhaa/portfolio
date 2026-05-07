@@ -20,17 +20,12 @@ const Aboutme = () => {
   </h1>
 
   <p className="mypara" data-aos="fade-up" data-aos-delay="200">
-    A Computer Science and Engineering undergraduate focused on Python-based
-    development and cloud technologies. I enjoy building applications that help
-    me understand backend systems, APIs, and automation workflows, while
-    strengthening my foundations in modern software development.
+I'm someone who genuinely wants to understand how things work — not just that something works, but why it works, what breaks it, and what's happening under the hood. That curiosity naturally pulled me toward backend systems and AI.
     <br />
     <br />
-    With a strong grounding in core computer science fundamentals, I’m gradually
-    exploring areas such as distributed systems, DevOps practices, and
-    data-driven applications. Outside of technology, I’m naturally curious and
-    motivated by continuous learning, with an interest in collaborating with
-    others and building things with real-world relevance.
+    I enjoy designing how data moves, how services communicate, and how systems behave under failure or scale. Most of my projects started with a simple question: “How would I actually build this properly?” and evolved into real systems with real architectural tradeoff
+    <br />
+    Right now, I'm especially drawn to the intersection of backend engineering and AI — building pipelines that are reliable, grounded, and thoughtfully designed.
   </p>
 </section>
 

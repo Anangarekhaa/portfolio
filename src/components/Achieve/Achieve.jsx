@@ -17,8 +17,8 @@ const Achieve = () => {
             <li data-aos="slide-right" data-aos-delay="300">Completed certification in <strong>Google Cloud Generative AI</strong></li>
             <li data-aos="slide-right" data-aos-delay="350">Certified in <strong>AWS Cloud Fundamentals</strong></li>
             <li data-aos="slide-right" data-aos-delay="400">Completed <strong>AWS Machine Learning</strong> Certificate</li>
-            <li data-aos="slide-right" data-aos-delay="450">Participated in <strong>Advaya</strong> Technical Events</li>
-            <li data-aos="slide-right" data-aos-delay="500">Participated in <strong>Virtuovation </strong>  Hackathon</li>
+           
+
          </ol>
     </section>
   )

@@ -14,7 +14,6 @@ const Contact = () => {
   <h2 className="contactTitle">Contact Me</h2>
 
   <div className="contactDetails">
-    <p><strong>📞 Phone:</strong> +91-9538433443</p>
     <p><strong>✉️ Email:</strong> <a href="mailto:anangarekhaa@gmail.com">anangarekhaa@gmail.com</a></p>
     <p><strong>🔗 LinkedIn:</strong> <a href="https://www.linkedin.com/in/ananga-rekha-3997b5357/" target="_blank" rel="noopener noreferrer">
   Visit My LinkedIn

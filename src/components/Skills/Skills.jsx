@@ -19,14 +19,21 @@ import numpylogo from '../../assets/numpy.png';
 import pandaslogo from '../../assets/pandas.png';
 import visuallogo from '../../assets/visualcode.png';
 import postmanlogo from '../../assets/postman.png';
-import { FaPython, FaReact, FaNodeJs, FaDocker, FaGit } from 'react-icons/fa';
-import { SiJavascript, SiMongodb, SiMysql, SiFirebase, SiTailwindcss } from 'react-icons/si';
+import { FaPython, FaReact, FaNodeJs, FaDocker, FaGit, FaSeedling } from 'react-icons/fa';
+import { SiJavascript, SiMongodb, SiMysql, SiFirebase, SiTailwindcss, SiPostgresql, SiCelery, SiRedis, SiElasticsearch, SiLangchain, SiHuggingface } from 'react-icons/si';
 import AOS from 'aos';
 
 const skills = [
   { name: 'Python', icon: <img src={PythonLogo} alt="Python" className="skillImg" /> },
   { name: 'Django', icon: <span className="skillIconText">🎜</span> },
   { name: 'FastAPI', icon: <span className="skillIconText">⚡</span> },
+  { name: 'PostgreSQL', icon: <SiPostgresql className="skillSvg" /> },
+  { name: 'Celery', icon: <SiCelery className="skillSvg" /> },
+  { name: 'Redis', icon: <SiRedis className="skillSvg" /> },
+  { name: 'LangGraph', icon: <SiLangchain className="skillSvg" /> },
+  { name: 'Pinecone', icon: <FaSeedling className="skillSvg" /> },
+  { name: 'Sentence Transformers', icon: <SiHuggingface className="skillSvg" /> },
+  { name: 'Elasticsearch', icon: <SiElasticsearch className="skillSvg" /> },
   { name: 'MySql', icon: <img src={mysqllogo} alt="mysql" className="skillImg" /> },
   { name: 'Azure', icon: <img src={azurelogo} alt="Azure" className="skillImg" /> },
   { name: 'AWS', icon: <img src={awslogo} alt="AWS" className="skillImg" /> },
